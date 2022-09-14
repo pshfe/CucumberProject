@@ -28,6 +28,7 @@ public OrderDetails od;
 @Given("I landed on Ecommerce Website")	
 public void I_landed_on_Ecommerce_Website() throws IOException
 {
+	System.out.println("Landing on Ecommerce Website");
 	initialize();
 }
 
