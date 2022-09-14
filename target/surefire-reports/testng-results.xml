@@ -1,215 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-13T18:15:04 PDT" name="Suite" finished-at="2022-09-13T18:15:40 PDT" duration-ms="35308">
+  <suite started-at="2022-09-14T12:13:47 PDT" name="Surefire suite" finished-at="2022-09-14T12:14:30 PDT" duration-ms="42449">
     <groups>
-      <group name="ErrorValidation">
-        <method signature="ErrorValidation.Loginerrorvalidate()[pri:0, instance:EndtoEnd.ErrorValidation@16ce702d]" name="Loginerrorvalidate" class="EndtoEnd.ErrorValidation"/>
-      </group> <!-- ErrorValidation -->
-      <group name="providingdata">
-        <method signature="standalone.Mainordersubmit(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndtoEnd.standalone@2c07545f]" name="Mainordersubmit" class="EndtoEnd.standalone"/>
-      </group> <!-- providingdata -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-13T18:15:04 PDT" name="secondTest" finished-at="2022-09-13T18:15:20 PDT" duration-ms="15440">
-      <class name="EndtoEnd.ErrorValidation">
-        <test-method retried="true" signature="Loginerrorvalidate()[pri:0, instance:EndtoEnd.ErrorValidation@16ce702d]" started-at="2022-09-13T18:15:04 PDT" name="Loginerrorvalidate" finished-at="2022-09-13T18:15:12 PDT" duration-ms="8044" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrects email or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrects email or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at EndtoEnd.ErrorValidation.Loginerrorvalidate(ErrorValidation.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginerrorvalidate -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.ErrorValidation@16ce702d]" started-at="2022-09-13T18:15:12 PDT" name="closedriver" finished-at="2022-09-13T18:15:13 PDT" duration-ms="687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-        <test-method signature="Loginerrorvalidate()[pri:0, instance:EndtoEnd.ErrorValidation@16ce702d]" started-at="2022-09-13T18:15:13 PDT" name="Loginerrorvalidate" finished-at="2022-09-13T18:15:19 PDT" duration-ms="5670" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrects email or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrects email or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at EndtoEnd.ErrorValidation.Loginerrorvalidate(ErrorValidation.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginerrorvalidate -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.ErrorValidation@16ce702d]" started-at="2022-09-13T18:15:19 PDT" name="closedriver" finished-at="2022-09-13T18:15:20 PDT" duration-ms="619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-      </class> <!-- EndtoEnd.ErrorValidation -->
-    </test> <!-- secondTest -->
-    <test started-at="2022-09-13T18:15:04 PDT" name="firstTest" finished-at="2022-09-13T18:15:40 PDT" duration-ms="35308">
-      <class name="EndtoEnd.standalone">
-        <test-method signature="Mainordersubmit(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:04 PDT" name="Mainordersubmit" data-provider="getdata" finished-at="2022-09-13T18:15:16 PDT" duration-ms="11390" status="PASS">
+    <test started-at="2022-09-14T12:13:47 PDT" name="Surefire test" finished-at="2022-09-14T12:14:30 PDT" duration-ms="42449">
+      <class name="Cucumber.RunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:13:47 PDT" name="setUpClass" finished-at="2022-09-14T12:13:48 PDT" duration-ms="788" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pooja.shetty@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Qwerty@2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[IPHONE 13 PRO]]>
+                <![CDATA[org.testng.TestRunner@6cc48a17]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mainordersubmit -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:16 PDT" name="closedriver" finished-at="2022-09-13T18:15:17 PDT" duration-ms="1116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-        <test-method signature="Mainordersubmit(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:17 PDT" name="Mainordersubmit" data-provider="getdata" finished-at="2022-09-13T18:15:26 PDT" duration-ms="8686" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:13:48 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T12:13:59 PDT" duration-ms="11127" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pooja.shetty@gmail.com]]>
+                <![CDATA["Validating my submitted orders"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Qwerty@2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA["Validating my orders"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mainordersubmit -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:26 PDT" name="closedriver" finished-at="2022-09-13T18:15:26 PDT" duration-ms="652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-        <test-method signature="Myorders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:26 PDT" name="Myorders" data-provider="getdata" finished-at="2022-09-13T18:15:32 PDT" depends-on-methods="EndtoEnd.standalone.Mainordersubmit" duration-ms="6167" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:13:59 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T12:14:07 PDT" duration-ms="8036" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pooja.shetty@gmail.com]]>
+                <![CDATA["Validating my submitted orders"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Qwerty@2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[IPHONE 13 PRO]]>
+                <![CDATA["Validating my orders"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Myorders -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:32 PDT" name="closedriver" finished-at="2022-09-13T18:15:33 PDT" duration-ms="645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closedriver -->
-        <test-method signature="Myorders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:33 PDT" name="Myorders" data-provider="getdata" finished-at="2022-09-13T18:15:39 PDT" depends-on-methods="EndtoEnd.standalone.Mainordersubmit" duration-ms="5957" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:14:07 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T12:14:19 PDT" duration-ms="11702" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pooja.shetty@gmail.com]]>
+                <![CDATA["Positive Test of Placing Order"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Qwerty@2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA["Purchase the Order from Ecommerce Website"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Myorders -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalone@2c07545f]" started-at="2022-09-13T18:15:39 PDT" name="closedriver" finished-at="2022-09-13T18:15:40 PDT" duration-ms="638" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:14:19 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T12:14:30 PDT" duration-ms="10696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Placing Order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the Order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closedriver -->
-      </class> <!-- EndtoEnd.standalone -->
-    </test> <!-- firstTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.RunnerTest@1de76cc7]" started-at="2022-09-14T12:14:30 PDT" name="tearDownClass" finished-at="2022-09-14T12:14:30 PDT" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.RunnerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

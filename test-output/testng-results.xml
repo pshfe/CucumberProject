@@ -1,95 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-13T17:43:02 PDT" name="Default suite" finished-at="2022-09-13T17:43:40 PDT" duration-ms="38082">
+  <suite started-at="2022-09-14T13:58:05 PDT" name="Default suite" finished-at="2022-09-14T13:58:55 PDT" duration-ms="50104">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="providingdata">
+        <method signature="standalonejasondata.Mainordersubmit(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" name="Mainordersubmit" class="EndtoEnd.standalonejasondata"/>
+      </group> <!-- providingdata -->
     </groups>
-    <test started-at="2022-09-13T17:43:02 PDT" name="Default test" finished-at="2022-09-13T17:43:40 PDT" duration-ms="38082">
-      <class name="Cucumber.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:02 PDT" name="setUpClass" finished-at="2022-09-13T17:43:03 PDT" duration-ms="603" status="PASS">
+    <test started-at="2022-09-14T13:58:05 PDT" name="Default test" finished-at="2022-09-14T13:58:55 PDT" duration-ms="50104">
+      <class name="EndtoEnd.standalonejasondata">
+        <test-method signature="Mainordersubmit(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:05 PDT" name="Mainordersubmit" data-provider="getdata1" finished-at="2022-09-14T13:58:16 PDT" duration-ms="10811" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@333398f]]>
+                <![CDATA[pooja.shetty@gmail.com,Qwerty@2022,IPHONE 13 PRO]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:03 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-13T17:43:12 PDT" duration-ms="8553" status="PASS">
+        </test-method> <!-- Mainordersubmit -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:16 PDT" name="closedriver" finished-at="2022-09-14T13:58:16 PDT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+        <test-method signature="Mainordersubmit(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:16 PDT" name="Mainordersubmit" data-provider="getdata1" finished-at="2022-09-14T13:58:25 PDT" duration-ms="9240" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validating my submitted orders"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validating my orders"]]>
+                <![CDATA[pooja.shetty@gmail.com,Qwerty@2022,ZARA COAT 3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:12 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-13T17:43:19 PDT" duration-ms="7306" status="PASS">
+        </test-method> <!-- Mainordersubmit -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:25 PDT" name="closedriver" finished-at="2022-09-14T13:58:26 PDT" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+        <test-method signature="Mainordersubmit(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:26 PDT" name="Mainordersubmit" data-provider="getdata1" finished-at="2022-09-14T13:58:35 PDT" duration-ms="9489" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validating my submitted orders"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validating my orders"]]>
+                <![CDATA[shetty@gmail.com,Iamking@000,ADIDAS ORIGINAL]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:19 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-13T17:43:30 PDT" duration-ms="10586" status="PASS">
+        </test-method> <!-- Mainordersubmit -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:35 PDT" name="closedriver" finished-at="2022-09-14T13:58:35 PDT" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+        <test-method signature="Myorders(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:35 PDT" name="Myorders" data-provider="getdata1" finished-at="2022-09-14T13:58:42 PDT" depends-on-methods="EndtoEnd.standalonejasondata.Mainordersubmit" duration-ms="6262" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Placing Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the Order from Ecommerce Website"]]>
+                <![CDATA[pooja.shetty@gmail.com,Qwerty@2022,IPHONE 13 PRO]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:30 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-13T17:43:40 PDT" duration-ms="10868" status="PASS">
+        </test-method> <!-- Myorders -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:42 PDT" name="closedriver" finished-at="2022-09-14T13:58:42 PDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+        <test-method signature="Myorders(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:42 PDT" name="Myorders" data-provider="getdata1" finished-at="2022-09-14T13:58:48 PDT" depends-on-methods="EndtoEnd.standalonejasondata.Mainordersubmit" duration-ms="6399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Placing Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the Order from Ecommerce Website"]]>
+                <![CDATA[pooja.shetty@gmail.com,Qwerty@2022,ZARA COAT 3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.RunnerTest@4be29ed9]" started-at="2022-09-13T17:43:40 PDT" name="tearDownClass" finished-at="2022-09-13T17:43:40 PDT" duration-ms="107" status="PASS">
+        </test-method> <!-- Myorders -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:48 PDT" name="closedriver" finished-at="2022-09-14T13:58:48 PDT" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.RunnerTest -->
+        </test-method> <!-- closedriver -->
+        <test-method signature="Myorders(java.lang.String)[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:48 PDT" name="Myorders" data-provider="getdata1" finished-at="2022-09-14T13:58:55 PDT" depends-on-methods="EndtoEnd.standalonejasondata.Mainordersubmit" duration-ms="6307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shetty@gmail.com,Iamking@000,ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Myorders -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:EndtoEnd.standalonejasondata@3646a422]" started-at="2022-09-14T13:58:55 PDT" name="closedriver" finished-at="2022-09-14T13:58:55 PDT" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- EndtoEnd.standalonejasondata -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

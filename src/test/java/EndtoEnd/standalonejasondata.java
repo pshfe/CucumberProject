@@ -27,22 +27,27 @@ public class standalonejasondata extends BaseTest {
 	//String name="IPHONE 13 PRO";
 	
 	@Test(dataProvider="getdata1",groups={"providingdata"})
-	public void Mainordersubmit(HashMap<String,String>hm) throws IOException
+	public void Mainordersubmit(String data) throws IOException
 	{
+		String[] a=data.split(",");
        initialize();// beforetest is used so  need to call here.
        LoginPage lp= new LoginPage(dr);
-       lp.loginapplication(hm.get("email"),hm.get("password"));
-      
+      // lp.loginapplication(hm.get("email"),hm.get("password"));
+       lp.loginapplication(a[0],a[1]);
+
   
        Productselection ps= new Productselection(dr);
-       String productname= ps.getproductlist(hm.get("Product"));
+      // String productname= ps.getproductlist(hm.get("Product"));
+       String productname= ps.getproductlist(a[2]);
+
        System.out.println("Product added to cart is :"+productname);
        ps.gettext();
        ps.getcartclick();
       
       
        MyCart mc= new MyCart(dr);
-       mc.productcheck(hm.get("Product"));
+    //   mc.productcheck(hm.get("Product"));
+       mc.productcheck(a[2]);
        mc.getcheckout();
       
        Payment m =new Payment(dr);
@@ -56,7 +61,7 @@ public class standalonejasondata extends BaseTest {
        
 	}
 	
- @Test(dataProvider="getdata1",dependsOnMethods= {"Mainordersubmit"})
+ /*@Test(dataProvider="getdata1",dependsOnMethods= {"Mainordersubmit"})
 	public void Myorders(HashMap<String,String>hk) throws IOException
 	{
 	     initialize();
@@ -64,15 +69,42 @@ public class standalonejasondata extends BaseTest {
         lp.loginapplication(hk.get("email"),hk.get("password"));
         OrderDetails od= new OrderDetails(dr);
         Assert.assertTrue(od.myorder(hk.get("Product")));
+	} */
+	
+ @Test(dataProvider="getdata1",dependsOnMethods= {"Mainordersubmit"})
+	public void Myorders(String b) throws IOException
+	{
+	    String[] a=b.split(",");
+	    initialize();
+		LoginPage lp= new LoginPage(dr);
+        lp.loginapplication(a[0],a[1]);
+        OrderDetails od= new OrderDetails(dr);
+        Assert.assertTrue(od.myorder(a[2]));
 	} 
 	
 	
-	
 	@DataProvider
-	public Object[][] getdata1() throws IOException
+	public String[] getdata1() throws IOException
 	{
 		List<HashMap<String, String>> testdata=readjsondata(System.getProperty("user.dir")+"\\src\\main\\java\\EndtoEnd\\Testdata.json");
-		return new Object[][] {{testdata.get(0)},{testdata.get(1)}};
+		System.out.println("No of Users :"+testdata.size());
+		String[] str= new String[testdata.size()] ;
+		
+		for (int i=0;i<testdata.size();i++)
+		{
+			HashMap<String, String> a=testdata.get(i);
+			String email =a.get("email");
+			String password= a.get("password");
+			String product=a.get("Product");
+			str[i]=email+","+password+","+product;
+			
+		}
+		return str;
+		
+
+		
+		//return new Object[][] {{testdata.get(0)},{testdata.get(1)}};
+		
 	}
 
 }

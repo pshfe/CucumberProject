@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cucumber.RunnerTest">
+      <class name="EndtoEnd.standalonejasondata">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3"/>
-          <include name="tearDownClass"/>
+          <include name="Myorders"/>
+          <include name="closedriver"/>
+          <include name="Mainordersubmit"/>
         </methods>
-      </class> <!-- Cucumber.RunnerTest -->
+      </class> <!-- EndtoEnd.standalonejasondata -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
